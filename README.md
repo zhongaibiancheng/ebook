@@ -18,7 +18,17 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ### Step 1 - Create new Repo
 
-Clone project to create a new Repository
+Create a new project in Github. You can either reference this template repo, or create an empty repository and clone this template repo. To clone, follow this process:
+
+```bash
+git clone git@github.com:JoelYoung01/VueStaticSiteTemplate.git <project_name_here>
+cd <project_name_here>
+git init
+git add .
+git commit -m "Initial Commit"
+git remote add origin <new_repo_url>
+git push -u origin main
+```
 
 ### Step 2 - Setup Environment
 
@@ -28,7 +38,7 @@ Copy `.envtemplate` to a new file, `.env`, and fill out applicable values
 
 Install dependencies
 
-```sh
+```bash
 pnpm i
 ```
 
@@ -36,18 +46,18 @@ pnpm i
 
 #### Compile and Hot-Reload for Development
 
-```sh
+```bash
 pnpm dev
 ```
 
 #### Type-Check, Compile and Minify for Production
 
-```sh
+```bash
 pnpm build
 ```
 
 #### Lint with [ESLint](https://eslint.org/)
 
-```sh
+```bash
 pnpm lint
 ```
