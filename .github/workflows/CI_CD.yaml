@@ -7,7 +7,7 @@ on:
 
 jobs:
   Deploy_to_environment:
-    uses: JoelYoung01/Templates/.github/workflows/DeployStaticS3Sitel.yaml@main
+    uses: JoelYoung01/Templates/.github/workflows/DeployStaticS3Sitel.yaml@v0.1.0
     with:
       environment: production
       app_name: ${{ vars.APP_NAME }}
