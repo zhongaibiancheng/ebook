@@ -2,8 +2,8 @@
 import "vuetify/styles";
 import "@mdi/font/css/materialdesignicons.css"; // Ensure you are using css-loader
 import { createVuetify, type ThemeDefinition } from "vuetify";
-// import * as components from 'vuetify/components'
-// import * as directives from 'vuetify/directives'
+
+// To customize SASS variables, follow the guide here: https://vuetifyjs.com/en/features/sass-variables
 
 const MainTheme: ThemeDefinition = {
   dark: false,
