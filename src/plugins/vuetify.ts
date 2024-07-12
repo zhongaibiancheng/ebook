@@ -1,6 +1,6 @@
 // Vuetify
 import "vuetify/styles";
-import "@mdi/font/css/materialdesignicons.css"; // Ensure you are using css-loader
+import "@mdi/font/css/materialdesignicons.css";
 import { createVuetify, type ThemeDefinition } from "vuetify";
 
 // To customize SASS variables, follow the guide here: https://vuetifyjs.com/en/features/sass-variables
