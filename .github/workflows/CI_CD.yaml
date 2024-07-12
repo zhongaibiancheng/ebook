@@ -1,0 +1,17 @@
+name: Deploy to PROD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Deploy_to_environment:
+    uses: JoelYoung01/Templates/.github/workflows/DeployStaticS3Sitel.yaml@main
+    with:
+      environment: production
+      app_name: ${{ vars.APP_NAME }}
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      S3_BUCKET: ${{ secrets.S3_BUCKET }}

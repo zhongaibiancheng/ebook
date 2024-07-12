@@ -61,3 +61,19 @@ pnpm build
 ```bash
 pnpm lint
 ```
+
+## S3 Deployment
+
+This repo comes with a GitHub Action that will deploy the site to an S3 bucket. To set this up, you'll need to add the following environment variables and secrets to your GitHub repository:
+
+Environment Variables:
+
+- `APP_NAME`
+
+Secrets:
+
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
+- `S3_BUCKET`
+
+The actions are set up to deploy to 3 environments; dev, stage, and prod. It is recommended to set up S3_BUCKET environment secret per environment.
