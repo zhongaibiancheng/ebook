@@ -5,9 +5,9 @@
       <v-toolbar-title>文档转书</v-toolbar-title>
 
         <v-spacer></v-spacer>
-        <v-btn text @click="goTo('price')">Price</v-btn>
-        <v-btn text @click="goTo('about')">About</v-btn>
-        <v-btn text @click="goTo('contact')">Contact</v-btn>
+        <v-btn text @click="goTo('price')">购买</v-btn>
+        <v-btn text @click="goTo('create_book')">创建电子书</v-btn>
+        <v-btn text @click="goTo('contact')">我的文档</v-btn>
         <v-spacer></v-spacer>
         <v-btn text @click="login">Login</v-btn>
         <v-btn outlined @click="signUp">Sign Up</v-btn>
