@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Index from "../views/Index.vue";
 import Price from "../views/Price.vue";
 import Payment from "../views/Payment.vue";
+import BuyDirectly from "../views/BuyDirectly.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,11 @@ const router = createRouter({
       path: "/payment",
       name: "payment",
       component: Payment
+    },
+    {
+      path:"/buy_directly",
+      name:"buy_directly",
+      component:BuyDirectly
     },
     {
       path: "/about",

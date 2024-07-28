@@ -1,6 +1,6 @@
 {
-  "name": "vuetemplate",
-  "version": "0.0.0",
+  "name": "文档转书",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -39,6 +39,7 @@
     "typescript": "~5.4.5",
     "unplugin-auto-import": "^0.17.8",
     "vite": "^5.3.3",
+    "vite-plugin-html": "^3.2.2",
     "vite-plugin-vue-devtools": "^7.3.5",
     "vite-plugin-vuetify": "^2.0.3",
     "vue-tsc": "^2.0.26"

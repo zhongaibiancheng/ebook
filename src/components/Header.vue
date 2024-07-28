@@ -1,8 +1,8 @@
 <template>
     <v-app-bar color="surface-variant" app>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
       <v-img src="/assets/images/logo.png" alt="Logo" contain max-height="50" class="mr-2 hover-pointer" @click="backToIndex"></v-img>
-      <!-- <v-toolbar-title>e转电子书</v-toolbar-title> -->
+      <v-toolbar-title>文档转书</v-toolbar-title>
 
         <v-spacer></v-spacer>
         <v-btn text @click="goTo('price')">Price</v-btn>
