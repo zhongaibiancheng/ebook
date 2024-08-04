@@ -5,6 +5,10 @@ import Payment from "../views/Payment.vue";
 import BuyDirectly from "../views/BuyDirectly.vue"
 import CreateBook from "../views/CreateBook.vue"
 
+import LoginView from "../views/login/LoginView.vue"
+import ResetPasswordView from "../views/login/ResetPasswordView.vue"
+import SignView from "../views/login/SignView.vue"
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -36,7 +40,22 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       // component: () => import("../views/AboutView.vue")
-    }
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: LoginView
+    },
+    {
+      path: "/sign",
+      name: "sign",
+      component: SignView
+    },
+    {
+      path: "/reset",
+      name: 'reset',
+      component: ResetPasswordView
+    },
   ]
 });
 

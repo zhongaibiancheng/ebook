@@ -14,18 +14,20 @@ const options = {
     //direction of flipbook
     //DFLIP.DIRECTION.LTR or 1 for left to right(default),
     //DFLIP.DIRECTION.RTL or 2 for right to left,
-    direction: DFLIP.DIRECTION.LTR,
+    // direction: DFLIP.DIRECTION.LTR,
+    direction:1,
     //set as
     //DFLIP.PAGE_MODE.AUTO for auto-detect(default),
     //DFLIP.PAGE_MODE.SINGLE or 1 for singleview,
     //DFLIP.PAGE_MODE.DOUBLE or 2 for doubleview,
-    pageMode: DFLIP.PAGE_MODE.AUTO,
+    // pageMode: DFLIP.PAGE_MODE.AUTO,
+    pageMode:0,
     //set as
     //DFLIP.SINGLE_PAGE_MODE.AUTO for auto-detect(default),
     //DFLIP.SINGLE_PAGE_MODE.ZOOM or 1 for normal zoom single view,
     //DFLIP.SINGLE_PAGE_MODE.BOOKLET or 2 for Booklet mode,
-    singlePageMode: DFLIP.SINGLE_PAGE_MODE.AUTO,
-
+    // singlePageMode: DFLIP.SINGLE_PAGE_MODE.AUTO,
+    singlePageMode:0,
     forceFit: true, //very rare usage leave it as true unless page are not fitting wrong...
     transparent: true, //true or false
     hard: "none", //possible values are "hard", "none", "cover"
