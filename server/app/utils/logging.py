@@ -1,6 +1,6 @@
 import logging,os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #获取上级目录的绝对路径
-log_dir = BASE_DIR + '/log/ts.log'
+log_dir = BASE_DIR + '/log/ebooks.log'
 
 def get_logger():
     #创建一个文件流并设置编码utf8

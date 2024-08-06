@@ -33,18 +33,18 @@ logger = get_logger()
 
 import uuid
 
-@app.errorhandler(Exception)
-def handle_exception(e):
-    '''
-    api 异常处理通用函数
-    '''
-    logger.error(f"未处理异常: {e}")
-    response = {
-        "message": "服务器内部错误",
-        "details": str(e)
-    }
+# @app.errorhandler(Exception)
+# def handle_exception(e):
+#     '''
+#     api 异常处理通用函数
+#     '''
+#     logger.error(f"未处理异常: {e}")
+#     response = {
+#         "message": "服务器内部错误",
+#         "details": str(e)
+#     }
     
-    return jsonify(response), 500
+#     return jsonify(response), 500
 
 class DownloadExcel(Resource):
     def get(self, filename):

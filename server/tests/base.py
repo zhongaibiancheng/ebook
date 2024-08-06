@@ -4,11 +4,8 @@ sys.path.append("../")
 
 from flask_testing import TestCase
 from app.config import load_config
-from praya_institue import app
- 
-# from src.database import db, init_db
- 
- 
+from ebook import app
+
 class BaseTestCase(TestCase):
   def create_app(self):
     app.config.from_object(load_config("TEST"))
